@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:zc_doddiddone/theme/theme.dart';
+import 'main_page.dart';
 
 class AuthPage extends StatefulWidget {
   // ignore: use_super_parameters
@@ -88,7 +89,7 @@ class _AuthPageState extends State<AuthPage> {
                   ),
                 const SizedBox(height: 32),
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const MainPage())); },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.white,
                     foregroundColor: theme.colorScheme.primary,
